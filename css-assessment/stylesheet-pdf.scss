@@ -37,6 +37,10 @@
     background-color: $color-primary;
     width: 8.65in;
     margin: 0 0 2rem -.75in;
+
+    span {
+        display: inline-block;
+    }
         
     .splash img {
         width: 8.15in;
