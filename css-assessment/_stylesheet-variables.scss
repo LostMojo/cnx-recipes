@@ -3,20 +3,18 @@
 @import url(https://fonts.googleapis.com/css?family=Muli:400,700,900&display=swap&subset=latin,latin-ext);
 @import url(https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap);
 
-/*defaults*/
+/*Fonts*/
 
-$color-text-default: #000000; 
 $font-default: "IBM Plex Sans", sans-serif; 
-$font-size-default: 12px;
-
-/*fonts*/
-
 $font-alt-sans: "Muli", sans-serif;
 $font-alt-serif: "Noto Serif", serif;
 
-/*colors*/
+/*Colors*/
 
+$color-text-default: #000000; 
 $color-primary: #0074BC;
 
-/*spacing*/
+/*Sizes & Spacing*/
+
+$font-size-default: 12px;
 $page-indent: 0.75in;
