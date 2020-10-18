@@ -1,0 +1,22 @@
+/*FONT IMPORTS: IBM Plex Sans, Muli*/
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,400,500,700&display=swap&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Muli:400,700,900&display=swap&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap);
+
+/*defaults*/
+
+$color-text-default: #000000; 
+$font-default: "IBM Plex Sans", sans-serif; 
+$font-size-default: 12px;
+
+/*fonts*/
+
+$font-alt-sans: "Muli", sans-serif;
+$font-alt-serif: "Noto Serif", serif;
+
+/*colors*/
+
+$color-primary: #0074BC;
+
+/*spacing*/
+$page-indent: 0.75in;

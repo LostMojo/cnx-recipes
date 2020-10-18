@@ -1,0 +1,158 @@
+@import "stylesheet-variables";
+@import "stylesheet-defaults";
+
+/* Chapter Title*/
+
+#chapTitle1 {
+    display: flex;
+    flex-wrap: wrap;
+
+    .os-part-text, .os-number { 
+        color: $color-primary;
+        font-family: $font-alt-sans;
+        font-size: 2rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        line-height: 1.5rem;
+        margin-right: 8px;
+    }
+
+    .os-divider {
+        width: 100%;
+    }
+
+    .os-text {
+        font-family: $font-default;
+        font-size: 3.5rem;
+        font-weight: lighter;
+        line-height: 3rem;
+    }
+}
+
+/* Splash Picture */
+
+.os-figure.has-splash {
+    display: inline-block;
+    background-color: $color-primary;
+    width: 8.65in;
+    margin: 0 0 2rem -.75in;
+        
+    .splash img {
+        width: 8.15in;
+        margin-left: $page-indent;
+    }
+}
+
+/* Picture Caption */
+
+.os-caption-container {
+    background-color: #EEEAE0;
+    padding: 1rem 0 2rem 0;
+    padding-left: $page-indent;
+    padding-bottom: 0;
+
+    .os-title-label, .os-number {
+        color: #C31427;
+        font-family: $font-alt-sans;
+        font-weight: bold;
+    }
+
+    .os-caption {
+        font-family: $font-default;
+    }
+}
+
+/* Chapter Outline */
+
+.os-chapter-outline {
+    display: inline-block;
+    position: absolute;
+    background-color: $color-primary;
+    font-family: $font-default;
+    font-size: 1rem; 
+    font-weight: 500;
+    width: 2.15in;
+    margin-right: -1.2rem;
+    margin-left: 1.5rem;
+    padding: 1.5rem 0 1.5rem 1.5rem;
+    color: white;
+    right: -($page-indent) + .15in;
+
+    .os-title{
+        color: inherit;
+        border-bottom: 1px solid white;
+        line-height: 1.5rem; 
+    }
+
+    a {
+        font-size: 12px;
+
+        &:link, &:visited, &:focus, &:hover, &:active {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+}
+
+/* Introduction */
+
+.intro-text {
+    margin-bottom: .7rem;
+    width: 5.25in;
+
+    h2 {
+        display: inline;
+    }
+
+    .os-text {
+        font-family: $font-alt-serif;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    p {
+        display: inline;
+        font-family: $font-alt-serif;
+    }
+}
+
+/* Chapter Learning Objectives */
+
+.chapter-content-module {
+    .os-number, .os-text {
+        color: $color-primary;
+        font-family: $font-alt-sans;
+        font-size: 1.7rem;
+        line-height: 1.5rem;
+    }
+
+    h3, p {
+        color: $color-primary;
+    } 
+    
+    p{
+        font-style: italic;
+    }
+
+    ul {
+        font-family: $font-alt-sans;
+        font-size: 1rem;
+        
+        li {
+            line-height: 1.5rem;
+            list-style: none inside;
+        }
+
+        li::before {
+            content: '\2022';
+            color: $color-primary;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: 5px;
+        } 
+    }
+}
