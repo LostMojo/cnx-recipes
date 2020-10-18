@@ -3,9 +3,10 @@
 
 /* Chapter Title*/
 
-#chapTitle1 {
+h1#chapTitle1 {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 1.5rem;
 
     .os-part-text, .os-number { 
         color: $color-primary;
@@ -33,12 +34,13 @@
 /* Splash Picture */
 
 .os-figure.has-splash {
-    display: inline-block;
+    display: block;
     background-color: $color-primary;
     width: 8.65in;
-    margin: 0 0 2rem -.75in;
+    margin-bottom: 2rem;
+    margin-left: -($page-indent);
 
-    span {
+    figure span {
         display: inline-block;
     }
         
@@ -54,7 +56,6 @@
     background-color: #EEEAE0;
     padding: 1rem 0 2rem 0;
     padding-left: $page-indent;
-    padding-bottom: 0;
 
     .os-title-label, .os-number {
         color: #C31427;
@@ -131,10 +132,12 @@
         font-family: $font-alt-sans;
         font-size: 1.7rem;
         line-height: 1.5rem;
+        margin: 0;
     }
 
     h3, p {
         color: $color-primary;
+        margin: 0;
     } 
     
     p{
@@ -144,10 +147,11 @@
     ul {
         font-family: $font-alt-sans;
         font-size: 1rem;
+        margin: 0;
         
         li {
             line-height: 1.5rem;
-            list-style: none inside;
+            list-style: none;
         }
 
         li::before {
@@ -155,8 +159,8 @@
             color: $color-primary;
             font-weight: bold;
             display: inline-block;
-            width: 1em;
-            margin-left: 5px;
+            width: 1rem;
+            margin: 0 0 0 .8rem;
         } 
     }
 }
