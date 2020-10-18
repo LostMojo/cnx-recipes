@@ -74,9 +74,6 @@ h1#chapTitle1 {
     display: inline-block;
     position: absolute;
     background-color: $color-primary;
-    font-family: $font-default;
-    font-size: 1rem; 
-    font-weight: 500;
     width: 2.15in;
     margin-right: -1.2rem;
     margin-left: 1.5rem;
@@ -86,17 +83,37 @@ h1#chapTitle1 {
 
     .os-title{
         color: inherit;
+        font-family: $font-default;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
         border-bottom: 1px solid white;
-        line-height: 1.5rem; 
+        padding-bottom: .5rem;
     }
 
     a {
-        font-size: 12px;
+        display: flex;
+        font-size: 1rem;
+        font-family: $font-default;
+        font-weight: 500;
+        line-height: 1.5rem;
+
 
         &:link, &:visited, &:focus, &:hover, &:active {
             color: inherit;
             text-decoration: none;
         }
+
+        span {
+            margin: .5rem .25rem 0 0;
+            font-weight: 500;
+        }
+
+        .os-text {
+            width: 1.25in;
+            flex-wrap: wrap;
+        }
+
     }
 
 }
@@ -121,23 +138,27 @@ h1#chapTitle1 {
     p {
         display: inline;
         font-family: $font-alt-serif;
+        
+        [data-effect="italics"] {
+            font-family: inherit;
+        }
     }
 }
 
 /* Chapter Learning Objectives */
 
 .chapter-content-module {
+    margin-top: 4rem;
+
     .os-number, .os-text {
         color: $color-primary;
         font-family: $font-alt-sans;
         font-size: 1.7rem;
         line-height: 1.5rem;
-        margin: 0;
     }
 
     h3, p {
         color: $color-primary;
-        margin: 0;
     } 
     
     p{
@@ -147,7 +168,6 @@ h1#chapTitle1 {
     ul {
         font-family: $font-alt-sans;
         font-size: 1rem;
-        margin: 0;
         
         li {
             line-height: 1.5rem;
