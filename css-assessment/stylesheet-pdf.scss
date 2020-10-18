@@ -56,11 +56,16 @@ h1#chapTitle1 {
     background-color: #EEEAE0;
     padding: 1rem 0 2rem 0;
     padding-left: $page-indent;
+    padding-right: 2.15in;
 
     .os-title-label, .os-number {
         color: #C31427;
         font-family: $font-alt-sans;
         font-weight: bold;
+    }
+
+    .os-number {
+        margin-right: .5rem;
     }
 
     .os-caption {
@@ -121,8 +126,8 @@ h1#chapTitle1 {
 /* Introduction */
 
 .intro-text {
-    margin-bottom: .7rem;
     width: 5.25in;
+    margin-bottom: .7rem;
 
     h2 {
         display: inline;
@@ -150,11 +155,15 @@ h1#chapTitle1 {
 .chapter-content-module {
     margin-top: 4rem;
 
-    .os-number, .os-text {
-        color: $color-primary;
-        font-family: $font-alt-sans;
-        font-size: 1.7rem;
-        line-height: 1.5rem;
+    h2 {
+        margin-bottom: .7rem;
+
+        .os-number, .os-text {
+            color: $color-primary;
+            font-family: $font-alt-sans;
+            font-size: 1.7rem;
+            line-height: 1.5rem;
+        }
     }
 
     h3, p {
